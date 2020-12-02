@@ -1,5 +1,6 @@
 /* 
   Orange color: #e67e22
+  Section background color: #e0e0e0 transition to #ebebeb
 */
 
 /* ----------------------------------------------------------- */
@@ -64,6 +65,20 @@ section {
 
 /* ICONS */
 
+.icon-small {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  color: #e67e22;
+  font-size: 120%;
+
+  /* Secrets to align text and icons */
+  line-height: 120%;
+  vertical-align: middle;
+  margin-top: -5px;
+  margin-right: 10px;
+}
+
 .icon-big {
   font-size: 350%;
   display: block;
@@ -114,6 +129,25 @@ h2:after {
 }
 
 /* ----------------------------------------------------------- */
+/* LINKS */
+/* ----------------------------------------------------------- */
+
+a:link,
+a:visited {
+  color: #e67e22;
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #e67e22;
+  transition: border-bottom 0.3s, color 0.3s;
+}
+
+a:hover,
+a:active {
+  color: rgb(83, 83, 83);
+  border-bottom: 1px solid transparent;
+}
+
+/* ----------------------------------------------------------- */
 /* BUTTONS */
 /* ----------------------------------------------------------- */
 
@@ -161,6 +195,7 @@ header {
     url(./img/hero.jpg);
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   height: 100vh;
 }
 
@@ -261,12 +296,12 @@ header {
 /* ----------------------------------------------------------- */
 
 .section-steps {
-  background-color: #ebebeb;
+  background-color: #e0e0e0;
   transition: background-color 0.5s;
 }
 
 .section-steps:hover {
-  background-color: white;
+  background-color: #ebebeb;
 }
 
 .steps-box:first-child {
@@ -307,13 +342,133 @@ header {
   margin-right: 50px;
 }
 
+.btn-app:link,
+.btn-app:visited {
+  border-bottom: none;
+}
+
 .btn-app img {
   height: 50px;
   width: auto;
   margin-right: 10px;
 }
 
-.btn-app:first-child {
+/* ----------------------------------------------------------- */
+/* CITIES */
+/* ----------------------------------------------------------- */
+
+.city-box img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
 }
-.btn-app:first-child {
+
+.city-feature {
+  margin-bottom: 5px;
+}
+
+/* ----------------------------------------------------------- */
+/* TESTIMONIALS */
+/* ----------------------------------------------------------- */
+
+.section-testimonials {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../css/img/back-customers.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+blockquote {
+  padding: 2%;
+  font-style: italic;
+  line-height: 145%;
+  position: relative;
+  margin-top: 40px;
+}
+
+blockquote::before {
+  content: "\201C";
+  font-size: 500%;
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+}
+
+cite {
+  font-size: 90%;
+  margin-top: 25px;
+  display: block;
+}
+
+cite img {
+  height: 45px;
+  width: auto;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* ----------------------------------------------------------- */
+/* PLANS */
+/* ----------------------------------------------------------- */
+
+.section-plans {
+  background-color: #e0e0e0;
+  transition: background-color 0.5s;
+}
+
+.section-plans:hover {
+  background-color: #ebebeb;
+}
+
+.plan-box {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 90%;
+  margin-left: 5%;
+  /* x y blur  */
+  box-shadow: 0 2px 2px rgb(231, 231, 231);
+}
+
+.plan-box div {
+  padding: 15px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.plan-price .month {
+  font-size: 300%;
+  margin-bottom: 20px;
+  font-weight: 100;
+}
+
+.plan-price .month span {
+  font-size: 30%;
+  font-weight: 300;
+  color: #e67e22;
+}
+
+.plan-price .meal {
+  font-size: 80%;
+}
+
+.plan-box ul {
+  list-style: none;
+}
+
+.plan-box ul li {
+  padding: 5px 0;
+}
+
+.plan-sign-up {
+  text-align: center;
+  border: 0;
+}
+
+.plan-price {
+  background-color: #fcfcfc;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
