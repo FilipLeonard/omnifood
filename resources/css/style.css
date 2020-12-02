@@ -485,9 +485,6 @@ cite img {
 /* FORM */
 /* ----------------------------------------------------------- */
 
-.section-form {
-}
-
 .contact-form {
   width: 60%;
   margin: 0 auto;
@@ -517,4 +514,88 @@ label {
   display: block;
   text-align: right;
   padding-top: 5px;
+}
+
+/* ----------------------------------------------------------- */
+/* FOOTER */
+/* ----------------------------------------------------------- */
+
+footer {
+  background-color: #333;
+  padding: 20px;
+  font-size: 80%;
+}
+
+footer ul {
+  list-style: none;
+}
+
+.footer-nav {
+  float: left;
+}
+
+.footer-social-links {
+  float: right;
+}
+
+.footer-nav li,
+.footer-social-links li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+footer li:link,
+footer li:visited {
+  transition: translate 0.15s;
+}
+
+footer li:hover,
+footer li:active {
+  transform: translate(0, -2px);
+}
+
+.footer-social-links li:last-child {
+  margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.footer-social-links li a:link,
+.footer-social-links li a:visited {
+  text-decoration: none;
+  border: 0;
+  color: #888;
+  transition: color 0.3s;
+}
+
+.footer-social-links li a:link,
+.footer-social-links li a:visited {
+  font-size: 180%;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+  color: #ddd;
+}
+
+footer p {
+  color: #888;
+  text-align: center;
+  font-size: 90%;
+  margin-top: 30px;
+}
+
+.logo-facebook:active,
+.logo-facebook:hover {
+  color: #3b5998;
+}
+
+.logo-twitter:active,
+.logo-twitter:hover {
+  color: #1da1f2;
+}
+
+.logo-instagram:active,
+.logo-instagram:hover {
+  color: #c32aa3;
 }
