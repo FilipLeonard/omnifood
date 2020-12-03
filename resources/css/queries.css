@@ -140,6 +140,14 @@
     color: rgb(83, 83, 83);
   }
 
+  .sticky .mobile-nav-icon-close {
+    margin-top: 10px;
+  }
+
+  .sticky .mobile-nav-icon-close ion-icon {
+    color: rgb(83, 83, 83);
+  }
+
   .long-copy {
     width: 100%;
     margin-left: 0;
