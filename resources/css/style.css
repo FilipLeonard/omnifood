@@ -647,3 +647,16 @@ footer p {
 .logo-instagram:hover {
   color: #c32aa3;
 }
+
+/* ----------------------------------------------------------- */
+/* ANIMATIONS */
+/* ----------------------------------------------------------- */
+
+.js--wp-1 {
+  opacity: 0;
+  animation-duration: 1s;
+}
+
+.js--wp-1.animate__animated {
+  opacity: 1;
+}
