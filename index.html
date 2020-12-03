@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" type="text/css" href="./vendors/css/normalize.css" />
 
@@ -467,6 +466,7 @@
             <div class="col span-1-of-3">
               <label for="name">Name</label>
             </div>
+
             <div class="col span-2-of-3">
               <input
                 type="text"
@@ -476,7 +476,8 @@
                 required
               />
             </div>
-            
+          </div>
+
           <div class="row">
             <div class="col span-1-of-3">
               <label for="email">Email</label>
@@ -490,18 +491,22 @@
                 required
               />
             </div>
+          </div>
+
           <div class="row">
             <div class="col span-1-of-3">
               <label for="find-us">How did you find us?</label>
             </div>
             <div class="col span-2-of-3">
               <select name="find-us" id="find-us">
-                  <option value="friends" selected>Friends</option>
-                  <option value="search">Search engine</option>
-                  <option value="ad">Advertisement</option>
-                  <option value="other">Other</option>
+                <option value="friends" selected>Friends</option>
+                <option value="search">Search engine</option>
+                <option value="ad">Advertisement</option>
+                <option value="other">Other</option>
               </select>
             </div>
+          </div>
+
           <div class="row">
             <div class="col span-1-of-3">
               <label for="news">Newsletter</label>
@@ -515,12 +520,19 @@
                 required
               />Yes, please
             </div>
+          </div>
           <div class="row">
             <div class="col span-1-of-3">
               <label for="message">Drop us a line</label>
             </div>
             <div class="col span-2-of-3">
-              <textarea name="message" id="message" cols="30" rows="7" placeholder="Your message"></textarea>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="7"
+                placeholder="Your message"
+              ></textarea>
             </div>
           </div>
 
@@ -529,7 +541,7 @@
               <label>&nbsp;</label>
             </div>
             <div class="col span-2-of-3">
-                <input type="submit" value="Send it">
+              <input type="submit" value="Send it" />
             </div>
           </div>
         </form>
@@ -537,31 +549,42 @@
     </section>
 
     <footer>
-        <div class="row">
-            <div class="col span-1-of-2">
-                <ul class="footer-nav">
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Press</a></li>
-                    <li><a href="#">iOS App</a></li>
-                    <li><a href="#">Android App</a></li>
-                </ul>
-            </div>
-            <div class="col span-1-of-2">
-                <ul class="footer-social-links">
-                    <li><a href="#"><ion-icon class="logo-facebook" name="logo-facebook"></ion-icon></a></li>
-                    <li><a href="#"><ion-icon class="logo-twitter" name="logo-twitter"></ion-icon></a></li>
-                    <li><a href="#"><ion-icon class="logo-instagram" name="logo-instagram"></ion-icon></a></li>
-                </ul>
-            </div>
+      <div class="row">
+        <div class="col span-1-of-2">
+          <ul class="footer-nav">
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">iOS App</a></li>
+            <li><a href="#">Android App</a></li>
+          </ul>
         </div>
-        <div class="row">
-            <p>
-                Copyright &copy; 2015 by Omnifood. All rights reserved.
-            </p>
+        <div class="col span-1-of-2">
+          <ul class="footer-social-links">
+            <li>
+              <a href="#"
+                ><ion-icon class="logo-facebook" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><ion-icon class="logo-twitter" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><ion-icon
+                  class="logo-instagram"
+                  name="logo-instagram"
+                ></ion-icon
+              ></a>
+            </li>
+          </ul>
         </div>
+      </div>
+      <div class="row">
+        <p>Copyright &copy; 2015 by Omnifood. All rights reserved.</p>
+      </div>
     </footer>
   </body>
 </html>
-
-
